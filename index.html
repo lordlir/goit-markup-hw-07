@@ -11,37 +11,29 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
+
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="page-header">
       <div class="conteiner">
-        <nav class="page-header__navigation">
+        <nav class="main-nav">
           <a class="logo page-header__logo--main" href="./index.html">
             <span class="logo__part">Web</span>Studio
           </a>
-          <ul class="page-header__nav-list">
-            <li class="page-header__nav-item">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
               <a
-                class="page-header__nav-link page-header__nav-link--active"
+                class="main-nav__link main-nav__link--active"
                 href="./index.html"
                 >Студія</a
               >
             </li>
-            <li class="page-header__nav-item">
-              <a class="page-header__nav-link" href="./portfolio.html"
-                >Портфоліо</a
-              >
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="./portfolio.html">Портфоліо</a>
             </li>
-            <li class="page-header__nav-item">
-              <a class="page-header__nav-link" href="">Контакти</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="">Контакти</a>
             </li>
           </ul>
         </nav>
@@ -69,7 +61,7 @@
     </header>
     <main>
       <!--section banner-->
-      <section class="section-hero">
+      <section class="section section-hero">
         <div class="conteiner">
           <h1 class="section-hero__title">
             ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ
@@ -139,24 +131,26 @@
                   ></textarea>
                 </label>
                 <label class="modal__form-chekbox">
-                  <input
-                    type="checkbox"
-                    name="hobby"
-                    value="agreement"
-                    class="modal__checkbox"
-                  />
+                  <div class="modal__chek-conteiner">
+                    <input
+                      type="checkbox"
+                      name="hobby"
+                      value="agreement"
+                      class="modal__checkbox"
+                    />
 
-                  <span class="modal__chek-border"
-                    ><svg class="modal__chek-icon" width="16" height="15">
-                      <use
-                        href="./images/symbol-defs.svg#icon-icon-check"
-                      ></use>
-                    </svg>
-                  </span>
-                  <span class="modal__chek-text"
-                    >Погоджуюся з розсилкою та приймаю</span
-                  >
-                  <a href="" class="modal__form-contract"> Умови договору</a>
+                    <span class="modal__chek-border"
+                      ><svg class="modal__chek-icon" width="16" height="15">
+                        <use
+                          href="./images/symbol-defs.svg#icon-icon-check"
+                        ></use>
+                      </svg>
+                    </span>
+                    <span class="modal__chek-text"
+                      >Погоджуюся з розсилкою та приймаю</span
+                    >
+                    <a href="" class="modal__form-contract"> Умови договору</a>
+                  </div>
                 </label>
                 <button type="submit" class="form-btn">Відправити</button>
               </form>
@@ -263,196 +257,212 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-section__list">
             <li class="team-section__item">
-              <img
-                class="player__image"
-                src="./images/igor-demjanenko.jpg"
-                alt="Ігор_Дем'яненко"
-                width="270"
-              />
-              <div class="player__data">
-                <h3 class="player__sub-title">Ігор Дем'яненко</h3>
-                <p class="player__position">Product Designer</p>
-                <ul class="social-network__list">
-                  <li class="social-network__item">
-                    <a class="social-network__media" href="#">
-                      <svg class="social-network__icon">
-                        <use
-                          href="./images/symbol-defs.svg#icon-instagram"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-network__item">
-                    <a class="social-network__media" href="#">
-                      <svg class="social-network__icon">
-                        <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-network__item">
-                    <a class="social-network__media" href="#">
-                      <svg class="social-network__icon">
-                        <use
-                          href="./images/symbol-defs.svg#icon-facebook"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-network__item">
-                    <a class="social-network__media" href="#">
-                      <svg class="social-network__icon">
-                        <use
-                          href="./images/symbol-defs.svg#icon-linkedin"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
+              <div class="player">
+                <img
+                  class="player__image"
+                  src="./images/igor-demjanenko.jpg"
+                  alt="Ігор_Дем'яненко"
+                  width="270"
+                />
+                <div class="player__data">
+                  <h3 class="player__sub-title">Ігор Дем'яненко</h3>
+                  <p class="player__position">Product Designer</p>
+                  <ul class="social-network">
+                    <li class="social-network__item">
+                      <a class="social-network__media" href="#">
+                        <svg class="social-network__icon">
+                          <use
+                            href="./images/symbol-defs.svg#icon-instagram"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-network__item">
+                      <a class="social-network__media" href="#">
+                        <svg class="social-network__icon">
+                          <use
+                            href="./images/symbol-defs.svg#icon-twitter"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-network__item">
+                      <a class="social-network__media" href="#">
+                        <svg class="social-network__icon">
+                          <use
+                            href="./images/symbol-defs.svg#icon-facebook"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-network__item">
+                      <a class="social-network__media" href="#">
+                        <svg class="social-network__icon">
+                          <use
+                            href="./images/symbol-defs.svg#icon-linkedin"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </li>
 
             <li class="team-section__item">
-              <img
-                class="team-section__image"
-                src="./images/olga-repina.jpg"
-                alt="Ольга_Рєпіна"
-                width="270"
-              />
-              <div class="player__data">
-                <h3 class="player__sub-title">Ольга Рєпіна</h3>
-                <p class="player__position">Frontend Developer</p>
-                <ul class="social-network__list">
-                  <li class="social-network__item">
-                    <a href="#" class="social-network__media">
-                      <svg class="social-network__icon">
-                        <use
-                          href="./images/symbol-defs.svg#icon-instagram"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-network__item">
-                    <a href="#" class="social-network__media">
-                      <svg class="social-network__icon">
-                        <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-network__item">
-                    <a href="#" class="social-network__media">
-                      <svg class="social-network__icon">
-                        <use
-                          href="./images/symbol-defs.svg#icon-facebook"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-network__item">
-                    <a href="#" class="social-network__media">
-                      <svg class="social-network__icon">
-                        <use
-                          href="./images/symbol-defs.svg#icon-linkedin"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
+              <div class="player">
+                <img
+                  class="player__image"
+                  src="./images/olga-repina.jpg"
+                  alt="Ольга_Рєпіна"
+                  width="270"
+                />
+                <div class="player__data">
+                  <h3 class="player__sub-title">Ольга Рєпіна</h3>
+                  <p class="player__position">Frontend Developer</p>
+                  <ul class="social-network">
+                    <li class="social-network__item">
+                      <a href="#" class="social-network__media">
+                        <svg class="social-network__icon">
+                          <use
+                            href="./images/symbol-defs.svg#icon-instagram"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-network__item">
+                      <a href="#" class="social-network__media">
+                        <svg class="social-network__icon">
+                          <use
+                            href="./images/symbol-defs.svg#icon-twitter"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-network__item">
+                      <a href="#" class="social-network__media">
+                        <svg class="social-network__icon">
+                          <use
+                            href="./images/symbol-defs.svg#icon-facebook"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-network__item">
+                      <a href="#" class="social-network__media">
+                        <svg class="social-network__icon">
+                          <use
+                            href="./images/symbol-defs.svg#icon-linkedin"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </li>
             <li class="team-section__item">
-              <img
-                class="team-section__image"
-                src="./images/nikola-tarasov.jpg"
-                alt="Микола_Тарасов"
-                width="270"
-              />
-              <div class="player__data">
-                <h3 class="player__sub-title">Микола Тарасов</h3>
-                <p class="player__position">Marketing</p>
-                <ul class="social-network__list">
-                  <li class="social-network__item">
-                    <a href="#" class="social-network__media">
-                      <svg class="social-network__icon">
-                        <use
-                          href="./images/symbol-defs.svg#icon-instagram"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-network__item">
-                    <a href="#" class="social-network__media">
-                      <svg class="social-network__icon">
-                        <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-network__item">
-                    <a href="#" class="social-network__media">
-                      <svg class="social-network__icon">
-                        <use
-                          href="./images/symbol-defs.svg#icon-facebook"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-network__item">
-                    <a href="#" class="social-network__media">
-                      <svg class="social-network__icon">
-                        <use
-                          href="./images/symbol-defs.svg#icon-linkedin"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
+              <div class="player">
+                <img
+                  class="player__image"
+                  src="./images/nikola-tarasov.jpg"
+                  alt="Микола_Тарасов"
+                  width="270"
+                />
+                <div class="player__data">
+                  <h3 class="player__sub-title">Микола Тарасов</h3>
+                  <p class="player__position">Marketing</p>
+                  <ul class="social-network">
+                    <li class="social-network__item">
+                      <a href="#" class="social-network__media">
+                        <svg class="social-network__icon">
+                          <use
+                            href="./images/symbol-defs.svg#icon-instagram"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-network__item">
+                      <a href="#" class="social-network__media">
+                        <svg class="social-network__icon">
+                          <use
+                            href="./images/symbol-defs.svg#icon-twitter"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-network__item">
+                      <a href="#" class="social-network__media">
+                        <svg class="social-network__icon">
+                          <use
+                            href="./images/symbol-defs.svg#icon-facebook"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-network__item">
+                      <a href="#" class="social-network__media">
+                        <svg class="social-network__icon">
+                          <use
+                            href="./images/symbol-defs.svg#icon-linkedin"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </li>
             <li class="team-section__item">
-              <img
-                class="team-section__image"
-                src="./images/majkl-ermakov.jpg"
-                alt="Михайло_Єрмаков"
-                width="270"
-              />
-              <div class="player__data">
-                <h3 class="player__sub-title">Михайло Єрмаков</h3>
-                <p class="player__position">UI designer</p>
-                <ul class="social-network__list">
-                  <li class="social-network__item">
-                    <a href="#" class="social-network__media">
-                      <svg class="social-network__icon">
-                        <use
-                          href="./images/symbol-defs.svg#icon-instagram"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-network__item">
-                    <a href="#" class="social-network__media">
-                      <svg class="social-network__icon">
-                        <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-network__item">
-                    <a href="#" class="social-network__media">
-                      <svg class="social-network__icon">
-                        <use
-                          href="./images/symbol-defs.svg#icon-facebook"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-network__item">
-                    <a href="#" class="social-network__media">
-                      <svg class="social-network__icon">
-                        <use
-                          href="./images/symbol-defs.svg#icon-linkedin"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
+              <div class="player">
+                <img
+                  class="player__image"
+                  src="./images/majkl-ermakov.jpg"
+                  alt="Михайло_Єрмаков"
+                  width="270"
+                />
+                <div class="player__data">
+                  <h3 class="player__sub-title">Михайло Єрмаков</h3>
+                  <p class="player__position">UI designer</p>
+                  <ul class="social-network">
+                    <li class="social-network__item">
+                      <a href="#" class="social-network__media">
+                        <svg class="social-network__icon">
+                          <use
+                            href="./images/symbol-defs.svg#icon-instagram"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-network__item">
+                      <a href="#" class="social-network__media">
+                        <svg class="social-network__icon">
+                          <use
+                            href="./images/symbol-defs.svg#icon-twitter"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-network__item">
+                      <a href="#" class="social-network__media">
+                        <svg class="social-network__icon">
+                          <use
+                            href="./images/symbol-defs.svg#icon-facebook"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-network__item">
+                      <a href="#" class="social-network__media">
+                        <svg class="social-network__icon">
+                          <use
+                            href="./images/symbol-defs.svg#icon-linkedin"
+                          ></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </li>
           </ul>
@@ -541,7 +551,7 @@
         </div>
         <div class="footer-media">
           <p class="footer-media__sub-title">приєднуйтесь</p>
-          <ul class="social-network__list">
+          <ul class="social-network">
             <li class="social-network__item">
               <a
                 href="#"

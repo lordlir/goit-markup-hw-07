@@ -11,35 +11,29 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
+
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="page-header">
       <div class="conteiner">
-        <nav class="page-header__navigation">
+        <nav class="main-nav">
           <a class="logo page-header__logo--main" href="./index.html">
             <span class="logo__part">Web</span>Studio
           </a>
-          <ul class="page-header__nav-list">
-            <li class="page-header__nav-item">
-              <a class="page-header__nav-link" href="./index.html">Студія</a>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="./index.html">Студія</a>
             </li>
-            <li class="page-header__nav-item">
+            <li class="main-nav__item">
               <a
-                class="page-header__nav-link page-header__nav-link--active"
+                class="main-nav__link main-nav__link--active"
                 href="./portfolio.html"
                 >Портфоліо</a
               >
             </li>
-            <li class="page-header__nav-item">
-              <a class="page-header__nav-link" href="">Контакти</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="">Контакти</a>
             </li>
           </ul>
         </nav>
@@ -69,33 +63,29 @@
       <section class="section">
         <div class="conteiner">
           <h1 class="section-title visually-hidden">проекти</h1>
-          <ul class="project__filter-list">
-            <li class="project__filter-item">
-              <button type="button" class="project__filter-button">Усі</button>
+          <ul class="filter-btns">
+            <li class="filter-btns__item">
+              <button type="button" class="filter-btns__button">Усі</button>
             </li>
-            <li class="project__filter-item">
-              <button type="button" class="project__filter-button">
+            <li class="filter-btns__item">
+              <button type="button" class="filter-btns__button">
                 Веб-сайти
               </button>
             </li>
-            <li class="project__filter-item">
-              <button type="button" class="project__filter-button">
-                Додатки
-              </button>
+            <li class="filter-btns__item">
+              <button type="button" class="filter-btns__button">Додатки</button>
             </li>
-            <li class="project__filter-item">
-              <button type="button" class="project__filter-button">
-                Дизайн
-              </button>
+            <li class="filter-btns__item">
+              <button type="button" class="filter-btns__button">Дизайн</button>
             </li>
-            <li class="project__filter-item">
-              <button type="button" class="project__filter-button">
+            <li class="filter-btns__item">
+              <button type="button" class="filter-btns__button">
                 Маркетинг
               </button>
             </li>
           </ul>
 
-          <ul class="project__list">
+          <ul class="projects">
             <li class="project__item">
               <a href="" class="project__link">
                 <div class="project__card">
@@ -291,7 +281,7 @@
         </div>
         <div class="footer-media">
           <p class="footer-media__sub-title">приєднуйтесь</p>
-          <ul class="social-network__list">
+          <ul class="social-network">
             <li class="social-network__item">
               <a
                 href="#"

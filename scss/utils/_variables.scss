@@ -1,0 +1,21 @@
+//  variables of color
+ 
+ $brandColor: #2196f3;
+ $mainTextColor: #212121;
+ $otherTextColor: #757575;
+ $backgroundMain: #ffffff;
+ $otherBg: #f5f4fa;
+ $iconColor: #afb1b8;
+ $darkBg: #2f303a;
+
+//  variables os text
+
+
+
+// mixins
+
+@mixin flexed($alignItem, $justyfyContent){
+    display: flex;
+    align-items: $alignItem;
+    justify-content: $justyfyContent;
+}
