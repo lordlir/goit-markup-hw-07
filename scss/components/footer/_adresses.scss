@@ -13,13 +13,13 @@
     text-decoration: none;
     font-style: normal;
     font-weight: 400;
-    line-height: calc(24 / 14);
+    line-height: $secondaryLH;
     color: $backgroundMain;
 }
 
 .footer-contact__link {
     font-style: normal;
-    line-height: calc(24 / 14);
+    line-height: $secondaryLH;
     text-decoration: none;
 
     color: rgba(255, 255, 255, 0.6);

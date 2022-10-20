@@ -69,9 +69,7 @@
     margin-top: 0;
     margin-bottom: 12px;
 
-    font-weight: 700;
-    font-size: 20px;
-    line-height: calc(23 / 20);
+    @include font(700, 20px, 1.15);
     text-align: center;
 
     color: $mainTextColor;
@@ -82,9 +80,7 @@
     display: flex;
     flex-direction: column;
 
-    font-weight: 400;
-    font-size: 12px;
-    line-height: calc(14 / 12);
+    @include font(400, 12px, 1.16);
     letter-spacing: 0.01em;
 
     color: $otherTextColor;
@@ -144,8 +140,7 @@
 .modal__form-chekbox {
     margin: 0 auto 30px;
 
-    font-size: 14px;
-    line-height: calc(24 / 14);
+    @include font(null, $mainTextSize, $secondaryLH);
 }
 
 .modal__checkbox {
@@ -205,10 +200,8 @@
     height: 50px;
     margin: 0 auto;
 
+    @include font(700, $secodaryTS, 1.87);
     text-align: center;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: calc(30 / 16);
     letter-spacing: 0.06em;
     cursor: pointer;
 

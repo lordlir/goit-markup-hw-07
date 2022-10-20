@@ -1,6 +1,5 @@
 .client__list {
-    display: flex;
-    justify-content: space-between;
+    @include flexed(null, space-between);
     padding: 0;
     margin: 0;
 
@@ -8,9 +7,7 @@
 }
 
 .client__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexed(center, center);
     width: 170px;
     height: 92px;
 

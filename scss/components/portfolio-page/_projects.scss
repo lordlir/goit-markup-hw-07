@@ -34,8 +34,8 @@
 
 .project__text {
     margin: 0;
-    font-size: 18px;
-    line-height: calc(28 / 18);
+
+    @include font(null, 18px, 1.55);
     color: $backgroundMain;
 
     position: absolute;
@@ -62,8 +62,7 @@
 }
 
 .project__sub-title {
-    font-size: 18px;
-    line-height: calc(36 / 18);
+    @include font(null, 18px, 2);
     letter-spacing: 0.06em;
     margin-top: 0;
     margin-bottom: 4px;
@@ -71,8 +70,7 @@
 }
 
 .project__name {
-    font-size: 16px;
-    line-height: calc(30 / 16);
+    @include font(null,$secodaryTS, 1.87);
     color: $otherTextColor;
     margin: 0;
 }

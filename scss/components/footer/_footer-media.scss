@@ -2,10 +2,9 @@
     margin-top: 0;
     margin-bottom: 20px;
 
-    font-size: 14px;
-    line-height: calc(16 / 14);
+    @include font (700, $mainTextSize, $mainLH);
     text-transform: uppercase;
-    font-weight: 700;
+    
 
     color: $backgroundMain;
 }

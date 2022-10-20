@@ -1,7 +1,5 @@
 .benefits-section__list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flexed(null, space-between);
     margin: 0;
     padding: 0;
     list-style: none;
@@ -12,9 +10,7 @@
 }
 
 .benefits-section__box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexed(center, center);
     height: 120px;
     background-color: $otherBg;
     border-radius: 4px;
@@ -30,14 +26,13 @@
     margin-top: 0;
     margin-bottom: 10px;
 
-    font-size: 14px;
-    line-height: calc(16 / 14);
+    @include font(null, $mainTextSize, $mainLH);
     text-transform: uppercase;
 }
 
 .benefits-section__advantage {
     margin: 0;
 
-    line-height: calc(24 / 14);
+    line-height: $secondaryLH;
     color: $otherTextColor;
 }

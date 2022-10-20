@@ -10,7 +10,12 @@
 
 //  variables os text
 
-
+$mainTextSize:14px;
+$secodaryTS:16px;
+$mainLH:1.14;
+$secondaryLH:1.71;
+$gapS:30px;
+$gapM:50px;
 
 // mixins
 
@@ -18,4 +23,10 @@
     display: flex;
     align-items: $alignItem;
     justify-content: $justyfyContent;
+}
+
+@mixin font ($fontW,$fontSize,$lineH){
+    font-weight: $fontW;
+    font-size: $fontSize;
+    line-height: $lineH;
 }

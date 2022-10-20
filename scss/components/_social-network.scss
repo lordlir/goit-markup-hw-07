@@ -1,17 +1,15 @@
 .social-network {
-    display: flex;
+    @include flexed(null, center);
     padding: 0;
     margin: 0;
     list-style: none;
 
     gap: 10px;
-    justify-content: center;
+    
 }
 
 .social-network__media {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexed(center, center);
     width: 44px;
     height: 44px;
     border-radius: 50%;
