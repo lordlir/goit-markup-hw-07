@@ -141,6 +141,8 @@
     margin: 0 auto 30px;
 
     @include font(null, $mainTextSize, $secondaryLH);
+        @include flexed (center, null);
+            cursor: pointer;
 }
 
 .modal__checkbox {
@@ -156,10 +158,10 @@
     margin: -1px;
 }
 
-.modal__chek-conteiner {
-    @include flexed (center, null );
-    cursor: pointer;
-}
+// .modal__chek-conteiner {
+//     @include flexed (center, null );
+//     cursor: pointer;
+// }
 
 .modal__form-contract {
     margin-left: 3px;

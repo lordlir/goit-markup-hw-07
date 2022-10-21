@@ -19,7 +19,7 @@
     background-color: $backgroundMain;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        fill 500ms cubic-bezier(0.4, 0, 0.2, 1) 125ms;
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 
     &:hover,
     &:focus {
